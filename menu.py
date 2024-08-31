@@ -1,4 +1,4 @@
-from USUARIO.AgregarUsuario import AgregarU, usuariosAdd
+from USUARIO.AgregarUsuario import AgregarU
 from USUARIO.EditarUsuario import EditarU
 from USUARIO.EliminarUsuario import EliminarU
 usuarios = []
@@ -28,8 +28,8 @@ while True:
         print("lista de usuarios actualizada", usuarios) 
         print("========================")    
     elif opcion == "3":
-        EditarU(usuarios)
-        
+        usuarios=EditarU(usuarios)
+        print("========================")
         
     elif opcion == "7":
         print("Saliendo del programa...")
