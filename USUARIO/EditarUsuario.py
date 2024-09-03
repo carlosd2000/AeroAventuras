@@ -7,8 +7,8 @@ def EditarU(usuariosAdd):
     for i in usuariosAdd:
         if i["cedula"] == cedula:
             nueva_cedula = int(input("ingrese nueva cc: "))
-            nuevo_nombre = input("Ingrese nuevo nombre (deje en blanco para no cambiar): ")
-            nueva_contraseña = int(input("Ingrese nueva contraseña (deje en blanco para no cambiar): "))
+            nuevo_nombre = input("Ingrese nuevo nombre: ")
+            nueva_contraseña = int(input("Ingrese nueva contraseña: "))
             
             if nueva_cedula:
                 i["cedula"] = nueva_cedula
@@ -20,6 +20,8 @@ def EditarU(usuariosAdd):
             
             print("lista actualizada:", usuariosAdd)
             break
+        
+        return usuariosAdd
     else:
         print("Usuario no encontrado.")
     

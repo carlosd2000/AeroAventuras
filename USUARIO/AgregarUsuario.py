@@ -14,8 +14,14 @@ def AgregarU (usuariosAdd):
         contraseña= int(input("ingrse contraseña"))
         usuario= {"nombre" :nombre,"cedula" : cedula, "contraseña": contraseña}
         
+        
+        
         usuariosAdd.append(usuario)
+        
+        return usuariosAdd
     else:
         
         print ("usuario agregado")
+        
+    
     
